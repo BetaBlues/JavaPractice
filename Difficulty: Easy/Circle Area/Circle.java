@@ -1,0 +1,36 @@
+
+
+import java.util.Scanner;
+public class Circle
+{
+    private double radius;
+    
+    public Circle(double theRadius)
+    {
+        radius = theRadius;
+    }
+
+    // Implement getArea using
+    // Math.PI and
+    // Math.pow
+    // Area = pi * r^2
+    
+    public double getArea()
+    {
+        
+    // return = what number it should spit out
+    //return Math.PI * Math.pow(radius,2);
+    }
+    
+    // Implement getCircumference using
+    // Math.PI
+    // Circumference = 2 * PI * r
+    
+    public double getCircumference()
+    {
+    
+    //return 2 * Math.PI * radius;
+    
+    }
+    
+}

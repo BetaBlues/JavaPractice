@@ -1,3 +1,7 @@
+/* 
+ * Implement getArea and getCircumference by using methods from the Math class.
+ */
+
 public class CircleTester 
 {
     public static void main(String[] args)

@@ -1,37 +1,34 @@
 /*
- * 
+    In this exercise, you will create a Top 10 Musicians of all time list.
 
-In this exercise, you will create a Top 10 Musicians of all time list.
+    A Musician class has been built that takes the name, number of albums sold, and number of weeks that artist has been on the Top40 list. 
+    The Musician class also has a boolean instance variable isPlatinum that determines if the musician has gone platinum, 
+    meaning they’ve sold over a million copies of the same record.
 
-A Musician class has been built that takes the name, number of albums sold, and number of weeks that artist has been on the Top40 list. 
-The Musician class also has a boolean instance variable isPlatinum that determines if the musician has gone platinum, 
-meaning they’ve sold over a million copies of the same record.
+    The Billboard class currently has a top10 ArrayList that will store the top 10 musicians as a list.
 
-The Billboard class currently has a top10 ArrayList that will store the top 10 musicians as a list.
+    In the Billboard class, create a void method add(Musician artist) method that will add a musician to the list if there are less than 10 musicians in the list, 
+    and if the musician has Platinum status. If there are 10 musicians in the list, 
+    then the method should call the void method replace(Musician artist) (that you will create). 
+    If the artist is not Platinum, display the following message:
 
-In the Billboard class, create a void method add(Musician artist) method that will add a musician to the list if there are less than 10 musicians in the list, 
-and if the musician has Platinum status. If there are 10 musicians in the list, 
-then the method should call the void method replace(Musician artist) (that you will create). 
-If the artist is not Platinum, display the following message:
+        Sorry, [artist name] does not qualify for Top 10
 
-    Sorry, [artist name] does not qualify for Top 10
+    where artist name is replaced with the artist’s actual name.
 
-where artist name is replaced with the artist’s actual name.
+    The replace method compares the total number of weeks that the musician has been on the top40 list. 
+    If the musician with the lowest number of weeks on the top40 is lower than the number of weeks on the top40 of the new musician, 
+    then the old musician is replaced by the new one. If the musician is replaced, there should be a message to the user using this format:
 
-The replace method compares the total number of weeks that the musician has been on the top40 list. 
-If the musician with the lowest number of weeks on the top40 is lower than the number of weeks on the top40 of the new musician, 
-then the old musician is replaced by the new one. If the musician is replaced, there should be a message to the user using this format:
+        The musician Pink Floyd has been replaced by Tracy the Turtle.
 
-    The musician Pink Floyd has been replaced by Tracy the Turtle.
+    Otherwise, the user should be notified that the new musician cannot be added because they don’t have enough weeks on the top40. For example:
 
-Otherwise, the user should be notified that the new musician cannot be added because they don’t have enough weeks on the top40. For example:
+        Sorry, Alex Eacker has less weeks in the Top 40 than the other musicians.
 
-    Sorry, Alex Eacker has less weeks in the Top 40 than the other musicians.
+    This method should be created in the Billboard class.
 
-This method should be created in the Billboard class.
-
-Use the BillboardTester class to test if the new musicians being added are being correctly replaced, or omitted from the Top 10.
-
+    Use the BillboardTester class to test if the new musicians being added are being correctly replaced, or omitted from the Top 10.
  */
 
  public class BillboardTester

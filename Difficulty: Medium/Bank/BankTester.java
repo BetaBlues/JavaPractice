@@ -9,7 +9,6 @@
  * You will also update the toString, as outlined in the comments.
 
  * When completed, create one student account and one regular account for testing. Deposit and withdraw money and print the results.
-
  */
 
  public class BankTester

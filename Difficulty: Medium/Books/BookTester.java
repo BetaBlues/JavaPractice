@@ -5,8 +5,6 @@
  * Your task is to move common attributes and methods to the Book superclass and remove them from the subclasses.
 
  * Note: You do not need a constructor in any class.
-
- * 
  */
 
 public class BookTester 
